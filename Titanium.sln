@@ -1,0 +1,37 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31515.178
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Titanium", "Titanium\Titanium.csproj", "{3C347987-F11C-46BF-8CC4-02EC900330BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebUiTests", "WebUiTests\WebUiTests.csproj", "{1A0AF160-65B1-4471-AA8D-E673AD990A54}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebApiTests", "WebApiTests\WebApiTests.csproj", "{0F4E3F1E-B080-4E2E-938D-8ADC988C9885}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3C347987-F11C-46BF-8CC4-02EC900330BB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3C347987-F11C-46BF-8CC4-02EC900330BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3C347987-F11C-46BF-8CC4-02EC900330BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3C347987-F11C-46BF-8CC4-02EC900330BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1A0AF160-65B1-4471-AA8D-E673AD990A54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A0AF160-65B1-4471-AA8D-E673AD990A54}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1A0AF160-65B1-4471-AA8D-E673AD990A54}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1A0AF160-65B1-4471-AA8D-E673AD990A54}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F4E3F1E-B080-4E2E-938D-8ADC988C9885}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F4E3F1E-B080-4E2E-938D-8ADC988C9885}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F4E3F1E-B080-4E2E-938D-8ADC988C9885}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F4E3F1E-B080-4E2E-938D-8ADC988C9885}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {06C5AABA-1BA6-41ED-936D-86242EC98301}
+	EndGlobalSection
+EndGlobal
