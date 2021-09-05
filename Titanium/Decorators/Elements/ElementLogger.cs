@@ -3,9 +3,9 @@ using System;
 
 namespace Titanium.Decorators.Elements
 {
-    public class LogElement : ElementDecorator
+    public class ElementLogger : ElementDecorator
     {
-        public LogElement(Element element) : base(element)
+        public ElementLogger(Element element) : base(element)
         {
 
         }

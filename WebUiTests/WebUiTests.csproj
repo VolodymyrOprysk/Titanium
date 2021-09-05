@@ -20,4 +20,8 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="92.0.4515.10700" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Titanium\Titanium.csproj" />
+  </ItemGroup>
+
 </Project>
