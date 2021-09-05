@@ -69,5 +69,11 @@ namespace Titanium.Decorators.Driver
         {
             webDriver.Quit();
         }
+
+        public override void WaitForAjax()
+        {
+            var js = (IJavaScriptExecutor)webDriver;
+            webDriverWait.Until(wd => js.ExecuteScript("return jQuery.active").ToString().Equals("0"));
+        }
     }
 }

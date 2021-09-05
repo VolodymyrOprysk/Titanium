@@ -45,5 +45,11 @@ namespace Titanium.Decorators.Driver
             Console.WriteLine($"Find Elements by locator = {locator}");
             return Driver?.FindElements(locator);
         }
+
+        public override void WaitForAjax()
+        {
+            Console.WriteLine("Wait for AJAX");
+            Driver?.WaitForAjax();
+        }
     }
 }
