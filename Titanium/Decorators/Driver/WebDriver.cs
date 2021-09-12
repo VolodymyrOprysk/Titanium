@@ -40,7 +40,7 @@ namespace Titanium.Decorators.Driver
         {
             var nativeWebElement = webDriverWait.Until(ExpectedConditions.ElementExists(locator));
             var element = new WebElement(webDriver, nativeWebElement, locator);
-            var loggedElement = new ElementLogger(element);
+            var loggedElement = new LoggingElement(element);
 
             return loggedElement;
         }
@@ -67,7 +67,10 @@ namespace Titanium.Decorators.Driver
 
         public override void Quit()
         {
-            webDriver.Quit();
+            if (webDriver != null)
+            {
+                webDriver.Quit();
+            }
         }
 
         public override void WaitForAjax()

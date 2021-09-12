@@ -9,9 +9,9 @@ using Titanium.Enums.BrowserEnum;
 
 namespace Titanium.Decorators.Driver
 {
-    public class DriverLogger : DriverDecorator
+    public class LoggingDriver : DriverDecorator
     {
-        public DriverLogger(Driver driver) : base(driver) 
+        public LoggingDriver(Driver driver) : base(driver) 
         {
 
         }
