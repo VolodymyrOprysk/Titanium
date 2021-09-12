@@ -32,6 +32,10 @@ namespace Titanium.Observer
             {
                 RestartBrowser();
             }
+            else
+            {
+                driver.DeleteAllCookies();
+            }
 
             previousBrowserConfiguration = currentBrowserConfiguration;
         }

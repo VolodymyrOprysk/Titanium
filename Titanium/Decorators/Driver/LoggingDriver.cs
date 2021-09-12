@@ -51,5 +51,11 @@ namespace Titanium.Decorators.Driver
             Console.WriteLine("Wait for AJAX");
             Driver?.WaitForAjax();
         }
+
+        public override void DeleteAllCookies()
+        {
+            Console.WriteLine("Cookies deleting");
+            Driver?.DeleteAllCookies();
+        }
     }
 }

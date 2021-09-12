@@ -17,6 +17,8 @@ namespace Titanium.Decorators.Driver
 
         public abstract List<Element> FindElements(By locator);
 
+        public abstract void DeleteAllCookies();
+
         public abstract void WaitForAjax();
     }
 }
