@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy $(TargetPath) $(SolutionDir)" />
+    <Exec Command="copy $(TargetDir) $(SolutionDir)" />
   </Target>
 
 </Project>
