@@ -5,13 +5,13 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Titanium.Decorators.Elements
 {
-    public class WebElement : Element
+    public class WebPageElement : Element
     {
         private readonly IWebDriver webDriver;
         private readonly IWebElement webElement;
         private readonly By by;
 
-        public WebElement(IWebDriver webDriver, IWebElement webElement, By by)
+        public WebPageElement(IWebDriver webDriver, IWebElement webElement, By by)
         {
             this.webDriver = webDriver;
             this.webElement = webElement;

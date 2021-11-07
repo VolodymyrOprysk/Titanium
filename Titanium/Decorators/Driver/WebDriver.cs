@@ -39,7 +39,7 @@ namespace Titanium.Decorators.Driver
         public override Element FindElement(By locator)
         {
             var nativeWebElement = webDriverWait.Until(ExpectedConditions.ElementExists(locator));
-            var element = new WebElement(webDriver, nativeWebElement, locator);
+            var element = new WebPageElement(webDriver, nativeWebElement, locator);
             var loggedElement = new LoggingElement(element);
 
             return loggedElement;
@@ -51,7 +51,7 @@ namespace Titanium.Decorators.Driver
             var elements = new List<Element>();
             foreach (var nativeWebElement in nativeWebElements)
             {
-                var element = new WebElement(webDriver, nativeWebElement, locator);
+                var element = new WebPageElement(webDriver, nativeWebElement, locator);
                 elements.Add(element);
             }
 
