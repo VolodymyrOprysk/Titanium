@@ -14,8 +14,4 @@
     <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="94.0.4606.6100" />
   </ItemGroup>
 
-  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="java -Dwebdriver.chrome.driver=&quot;C:\SeleniumGrid\chromedriver.exe&quot; -jar C:\SeleniumGrid\selenium-server-4.0.0.jar standalone" />
-  </Target>
-
 </Project>
