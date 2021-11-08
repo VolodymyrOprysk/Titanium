@@ -1,9 +1,6 @@
 ﻿using OpenQA.Selenium;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Titanium.Decorators.Elements;
 using Titanium.Enums.BrowserEnum;
 
@@ -14,6 +11,12 @@ namespace Titanium.Decorators.Driver
         public LoggingDriver(Driver driver) : base(driver) 
         {
 
+        }
+
+        public override IWebDriver GetWebDriver()
+        {
+            Console.WriteLine("Native Selenium IWebDriver accessed");
+            return Driver?.GetWebDriver();
         }
 
         public override void Start(Browser browser)

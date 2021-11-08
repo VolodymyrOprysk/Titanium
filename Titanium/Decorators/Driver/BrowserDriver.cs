@@ -11,7 +11,7 @@ using System.Collections.Generic;
 
 namespace Titanium.Decorators.Driver
 {
-    public class WebDriver : Driver
+    public class BrowserDriver : Driver
     {
         private IWebDriver webDriver;
         private WebDriverWait webDriverWait;
@@ -82,6 +82,11 @@ namespace Titanium.Decorators.Driver
         public override void DeleteAllCookies()
         {
             webDriver.Manage().Cookies.DeleteAllCookies();
+        }
+
+        public override IWebDriver GetWebDriver()
+        {
+            return webDriver;
         }
     }
 }

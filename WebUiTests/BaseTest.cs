@@ -1,5 +1,6 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Reflection;
+using Titanium;
 using Titanium.Decorators.Driver;
 using Titanium.Observer;
 
@@ -10,11 +11,14 @@ namespace WebUiTests
     {
         private static readonly ITestExecutionSubject currentTestExecutionSubject;
         private static readonly LoggingDriver loggingDriver;
+        private static readonly BrowserDriver driver;
+
 
         static BaseTest()
         {
             currentTestExecutionSubject = new MsTestExecutionSubject();
-            loggingDriver = new LoggingDriver(new WebDriver());
+            driver = new BrowserDriver();
+            loggingDriver = new LoggingDriver(driver);
             new BrowserLaunchTestBehaviorObserver(currentTestExecutionSubject, loggingDriver);
             var memberInfo = MethodBase.GetCurrentMethod();
             currentTestExecutionSubject.TestInstanciated(memberInfo);
@@ -74,7 +78,7 @@ namespace WebUiTests
 
         public virtual void TestCleanup()
         {
-
+            ScreenshotMaker.SaveScreenshot(loggingDriver.GetWebDriver(), TestName);
         }
     }
 }

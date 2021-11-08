@@ -38,5 +38,10 @@ namespace Titanium.Decorators.Driver
         {
             return Driver?.FindElements(locator);
         }
+
+        public override IWebDriver GetWebDriver()
+        {
+            return Driver?.GetWebDriver();
+        }
     }
 }

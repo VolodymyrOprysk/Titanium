@@ -7,6 +7,8 @@ namespace Titanium.Decorators.Driver
 {
     public abstract class Driver
     {
+        public abstract IWebDriver GetWebDriver();
+
         public abstract void Start(Browser browser);
 
         public abstract void Quit();
