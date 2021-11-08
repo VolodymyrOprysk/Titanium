@@ -23,6 +23,7 @@ namespace WebUiTests
         {
             MainPage.AddRocketToShoppingCart();
             CartPage.ApplyCoupon("happybirthday");
+            Assert.AreEqual("50.00ˆ", CartPage.GetTotalPrice(), "Total price does NOT match");
         }
     }
 }
